@@ -1,0 +1,155 @@
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+.right-view {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.scrollable {
+    overflow-y: auto;
+}
+
+.scrollable_left {
+    height: 600px;
+    overflow-y: auto;
+    float: left;
+    position: relative;
+    margin-left: -5px;
+}
+
+.app-title {
+    font-weight: 700;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.menu-header {
+    background: #363636;
+    color: rgb(238, 238, 238);
+    padding: 15px;
+}
+
+.menu-subheader {
+    background: #212121;
+    color: rgb(238, 238, 238);
+    padding: 1px;
+}
+
+.menu-subheader ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-subheader li {
+    padding-left: 40px;
+}
+
+.spacing {
+    margin: 20px;
+}
+
+.left_spacing {
+    margin-left: 20px;
+}
+
+.top_spacing {
+    margin-top: 20px;
+}
+
+.spellchecking {
+    background: rgba(253, 223, 125, 0.3);
+    color: #212121;
+    padding: 15px;
+}
+
+.title {
+    font-weight: 500;
+}
+
+.labelling {
+    background: rgba(29, 224, 224, 0.3);
+    color: #212121;
+    padding: 15px;
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-trigger {
+    background: #ffffff;
+    border-radius: 90px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border: none;
+    vertical-align: middle;
+    transition: box-shadow 0.4s ease;
+    margin-left: auto; /* Strictly for positioning */
+}
+
+.menu-trigger:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+    font-weight: 700;
+    vertical-align: middle;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.menu-trigger img {
+    border-radius: 90px;
+}
+
+.menu {
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-0px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #dddddd;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333333;
+    padding: 5px 20px;
+    display: block;
+}
